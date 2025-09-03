@@ -9,17 +9,17 @@ interface SocialLink {
 }
 
 const PersonalHero = () => {
-  // These would be replaced with actual user data
-  const name = "Your Name";
-  const location = "Your City, State";
-  const tagline = "Researcher, Writer & Creative Thinker";
+  const name = "Somya Mohindra";
+  const location = "San Francisco";
+  const tagline = "Engineer & Creative Thinker";
   
   const socialLinks: SocialLink[] = [
-    { name: "LinkedIn", url: "#", description: "Professional network" },
-    { name: "GitHub", url: "#", description: "Code & projects" },
-    { name: "Substack", url: "#", description: "Newsletter & essays" },
-    { name: "Medium", url: "#", description: "Published articles" },
-    { name: "Research", url: "#", description: "Academic work" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/somya-mohindra/", description: "Professional network" },
+    { name: "GitHub", url: "https://github.com/somyam", description: "Code & projects" },
+    { name: "Substack", url: "https://substack.com/@inthisskin?utm_source=user-menu", description: "Newsletter & essays" },
+    { name: "Instagram", url: "https://www.instagram.com/somyasart/", description: "Art & creativity" },
+    { name: "Research", url: "https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.16_suppl.1561", description: "Academic work" },
+    { name: "Insights", url: "https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593", description: "Published articles" },
   ];
 
   return (
