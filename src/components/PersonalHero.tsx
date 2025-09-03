@@ -21,8 +21,6 @@ const PersonalHero = () => {
     { name: "Insights", url: "https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593", description: "nonprofit writing" },
   ];
 
-  
-
   return (
     <div className="min-h-screen bg-gradient-subtle flex items-center justify-center px-4 py-12">
       <div className="max-w-4xl mx-auto text-center space-y-12">
@@ -37,9 +35,6 @@ const PersonalHero = () => {
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-heading font-semibold text-primary animate-glow">
               {name}
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground font-light tracking-wide">
-              {tagline}
-            </p>
           </div>
 
           {/* Location */}
