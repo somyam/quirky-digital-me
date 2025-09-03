@@ -10,6 +10,7 @@ interface SocialLink {
 
 const PersonalHero = () => {
   const name = "Somya Mohindra";
+  const tagline = "Engineer & Creative Thinker";
   const location = "San Francisco";
   
   const socialLinks: SocialLink[] = [
