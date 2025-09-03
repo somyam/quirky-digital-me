@@ -15,10 +15,10 @@ const PersonalHero = () => {
   const socialLinks: SocialLink[] = [
     { name: "LinkedIn", url: "https://www.linkedin.com/in/somya-mohindra/", description: "professional network" },
     { name: "GitHub", url: "https://github.com/somyam", description: "code & projects" },
-    { name: "Substack", url: "https://substack.com/@inthisskin?utm_source=user-menu", description: "essays" },
-    { name: "Instagram", url: "https://www.instagram.com/somyasart/", description: "creative practice" },
     { name: "Research", url: "https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.16_suppl.1561", description: "published research" },
     { name: "Insights", url: "https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593", description: "nonprofit writing" },
+    { name: "Substack", url: "https://substack.com/@inthisskin?utm_source=user-menu", description: "essays" },
+    { name: "Instagram", url: "https://www.instagram.com/somyasart/", description: "creative practice" },,
   ];
 
   return (
