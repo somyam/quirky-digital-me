@@ -10,7 +10,6 @@ interface SocialLink {
 
 const PersonalHero = () => {
   const name = "Somya Mohindra";
-  const tagline = "Engineer & Creative Thinker";
   const location = "San Francisco";
   
   const socialLinks: SocialLink[] = [
@@ -21,6 +20,8 @@ const PersonalHero = () => {
     { name: "Research", url: "https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.16_suppl.1561", description: "published research" },
     { name: "Insights", url: "https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593", description: "nonprofit writing" },
   ];
+
+  
 
   return (
     <div className="min-h-screen bg-gradient-subtle flex items-center justify-center px-4 py-12">
