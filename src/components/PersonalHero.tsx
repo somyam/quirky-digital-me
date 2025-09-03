@@ -1,0 +1,87 @@
+import { MapPin, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+
+interface SocialLink {
+  name: string;
+  url: string;
+  description: string;
+}
+
+const PersonalHero = () => {
+  // These would be replaced with actual user data
+  const name = "Your Name";
+  const location = "Your City, State";
+  const tagline = "Researcher, Writer & Creative Thinker";
+  
+  const socialLinks: SocialLink[] = [
+    { name: "LinkedIn", url: "#", description: "Professional network" },
+    { name: "GitHub", url: "#", description: "Code & projects" },
+    { name: "Substack", url: "#", description: "Newsletter & essays" },
+    { name: "Medium", url: "#", description: "Published articles" },
+    { name: "Research", url: "#", description: "Academic work" },
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-subtle flex items-center justify-center px-4 py-12">
+      <div className="max-w-4xl mx-auto text-center space-y-12">
+        {/* Floating decoration */}
+        <div className="absolute top-20 left-1/4 w-20 h-20 bg-accent/20 rounded-full animate-float"></div>
+        <div className="absolute bottom-32 right-1/4 w-16 h-16 bg-primary/10 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
+        
+        {/* Main content */}
+        <div className="space-y-8 relative z-10">
+          {/* Name and tagline */}
+          <div className="space-y-4">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-heading font-semibold text-primary animate-glow">
+              {name}
+            </h1>
+            <p className="text-xl md:text-2xl text-muted-foreground font-light tracking-wide">
+              {tagline}
+            </p>
+          </div>
+
+          {/* Location */}
+          <div className="flex items-center justify-center gap-2 text-muted-foreground">
+            <MapPin className="w-5 h-5" />
+            <span className="text-lg">{location}</span>
+          </div>
+
+          {/* Social links */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 max-w-5xl mx-auto pt-8">
+            {socialLinks.map((link) => (
+              <Card key={link.name} className="group hover:shadow-glow transition-all duration-300 border-border/50">
+                <Button
+                  variant="ghost"
+                  className="w-full h-full p-6 flex flex-col items-center gap-3 hover:bg-accent/10 transition-smooth"
+                  asChild
+                >
+                  <a href={link.url} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="w-6 h-6 text-accent group-hover:scale-110 transition-bounce" />
+                    <div className="text-center">
+                      <div className="font-medium text-foreground group-hover:text-accent transition-smooth">
+                        {link.name}
+                      </div>
+                      <div className="text-sm text-muted-foreground mt-1">
+                        {link.description}
+                      </div>
+                    </div>
+                  </a>
+                </Button>
+              </Card>
+            ))}
+          </div>
+
+          {/* Subtle call to action */}
+          <div className="pt-8">
+            <p className="text-muted-foreground italic">
+              "Exploring the intersection of technology, thought, and human connection."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default PersonalHero;
