@@ -72,12 +72,7 @@ const PersonalHero = () => {
             ))}
           </div>
 
-          {/* Subtle call to action */}
-          <div className="pt-8">
-            <p className="text-muted-foreground italic">
-              "Exploring the intersection of technology, thought, and human connection."
-            </p>
-          </div>
+          
         </div>
       </div>
     </div>
