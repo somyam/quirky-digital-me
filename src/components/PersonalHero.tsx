@@ -16,10 +16,10 @@ const PersonalHero = () => {
   const socialLinks: SocialLink[] = [
     { name: "LinkedIn", url: "https://www.linkedin.com/in/somya-mohindra/", description: "Professional network" },
     { name: "GitHub", url: "https://github.com/somyam", description: "Code & projects" },
-    { name: "Substack", url: "https://substack.com/@inthisskin?utm_source=user-menu", description: "Newsletter & essays" },
-    { name: "Instagram", url: "https://www.instagram.com/somyasart/", description: "Art & creativity" },
+    { name: "Substack", url: "https://substack.com/@inthisskin?utm_source=user-menu", description: "essays" },
+    { name: "Instagram", url: "https://www.instagram.com/somyasart/", description: "creative practice" },
     { name: "Research", url: "https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.16_suppl.1561", description: "Academic work" },
-    { name: "Insights", url: "https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593", description: "Published articles" },
+    { name: "Insights", url: "https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593", description: "nonprofit writing" },
   ];
 
   return (
