@@ -32,7 +32,7 @@ const PersonalHero = () => {
         <div className="space-y-8 relative z-10">
           {/* Name and tagline */}
           <div className="space-y-4">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-heading font-semibold text-primary animate-glow">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-heading font-semibold text-primary">
               {name}
             </h1>
           </div>
