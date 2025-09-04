@@ -21,6 +21,7 @@ export default {
 			fontFamily: {
 				'heading': ['var(--font-heading)'],
 				'body': ['var(--font-body)'],
+				'custom': ['GreekFallback', 'freight-sans-pro', 'Frutiger', 'Frutiger Linotype', 'Univers', 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'Myriad', 'Liberation Sans', 'Nimbus Sans L', 'Tahoma', 'Geneva', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
