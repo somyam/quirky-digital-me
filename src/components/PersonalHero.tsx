@@ -44,7 +44,7 @@ const PersonalHero = () => {
           </div>
 
           {/* Social links */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 max-w-5xl mx-auto pt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 max-w-6xl mx-auto pt-8">
             {socialLinks.map((link) => (
               <Card key={link.name} className="group hover:shadow-glow transition-all duration-300 border-border/50">
                 <Button
