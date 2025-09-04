@@ -59,10 +59,10 @@ const PersonalHero = () => {
                   <a href={link.url} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-6 h-6 text-accent group-hover:scale-110 transition-bounce" />
                     <div className="text-center">
-                      <div className="font-medium text-foreground group-hover:text-accent transition-smooth">
+                      <div className="text-lg font-medium text-foreground group-hover:text-accent transition-smooth">
                         {link.name}
                       </div>
-                      <div className="text-sm text-muted-foreground mt-1">
+                      <div className="text-base text-muted-foreground mt-1">
                         {link.description}
                       </div>
                     </div>
