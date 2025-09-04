@@ -18,7 +18,7 @@ const PersonalHero = () => {
     { name: "Research", url: "https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.16_suppl.1561", description: "published research" },
     { name: "Insights", url: "https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593", description: "nonprofit writing" },
     { name: "Substack", url: "https://substack.com/@inthisskin?utm_source=user-menu", description: "essays" },
-    { name: "Instagram", url: "https://www.instagram.com/somyasart/", description: "creative practice" },,
+    { name: "Instagram", url: "https://www.instagram.com/somyasart/", description: "creative practice" }
   ];
 
   return (
@@ -44,7 +44,7 @@ const PersonalHero = () => {
           </div>
 
           {/* Social links */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 max-w-5xl mx-auto pt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 max-w-5xl mx-auto pt-8">
             {socialLinks.map((link) => (
               <Card key={link.name} className="group hover:shadow-glow transition-all duration-300 border-border/50">
                 <Button
