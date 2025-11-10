@@ -36,7 +36,7 @@ const PersonalHero = () => {
               {name}
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              I am a backend engineer with 4 years of experience shipping resilient, scalable systems. I enjoy tinkering with new AI tools, and am excited by startups that amplify artistic vision and collective healing. In my free time I research healthcare equity and make art to explore personal transformation.
+              I am a backend engineer with 3 years of experience shipping resilient, scalable systems. I enjoy tinkering with new AI tools, and am excited by startups that amplify collective healing. In my free time I research healthcare equity and make art to explore personal transformation.
             </p>
           </div>
 
