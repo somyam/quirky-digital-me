@@ -11,14 +11,22 @@ interface SocialLink {
 const PersonalHero = () => {
   const name = "Somya Mohindra";
   const location = "San Francisco";
-  
+
   const socialLinks: SocialLink[] = [
     { name: "LinkedIn", url: "https://www.linkedin.com/in/somya-mohindra/", description: "professional network" },
     { name: "GitHub", url: "https://github.com/somyam", description: "code & projects" },
-    { name: "Research", url: "https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.16_suppl.1561", description: "published research" },
-    { name: "Insights", url: "https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593", description: "nonprofit writing" },
+    {
+      name: "Research",
+      url: "https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.16_suppl.1561",
+      description: "published research",
+    },
+    {
+      name: "Insights",
+      url: "https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593",
+      description: "nonprofit writing",
+    },
     { name: "Substack", url: "https://substack.com/@inthisskin?utm_source=user-menu", description: "personal essays" },
-    { name: "Instagram", url: "https://www.instagram.com/somyasart/", description: "creative practice" }
+    { name: "Instagram", url: "https://www.instagram.com/somyasart/", description: "creative practice" },
   ];
 
   return (
@@ -26,17 +34,20 @@ const PersonalHero = () => {
       <div className="max-w-4xl mx-auto text-center space-y-12">
         {/* Floating decoration */}
         <div className="absolute top-20 left-1/4 w-20 h-20 bg-accent/20 rounded-full animate-float"></div>
-        <div className="absolute bottom-32 right-1/4 w-16 h-16 bg-primary/10 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
-        
+        <div
+          className="absolute bottom-32 right-1/4 w-16 h-16 bg-primary/10 rounded-full animate-float"
+          style={{ animationDelay: "2s" }}
+        ></div>
+
         {/* Main content */}
         <div className="space-y-8 relative z-10">
           {/* Name and tagline */}
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-semibold text-primary">
-              {name}
-            </h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-semibold text-primary">{name}</h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              I am a backend engineer with 3 years of experience shipping resilient, scalable systems. I enjoy tinkering with new AI tools, and am excited by startups that amplify collective healing. In my free time I research healthcare equity and make art to explore personal transformation.
+              I am a backend engineer with 3 years of experience shipping resilient, scalable systems. I enjoy tinkering
+              with new AI tools, and am excited by startups that amplify collective healing. In my free time I read and
+              write about healthcare equity, make art to explore personal transformation, and teach yoga.
             </p>
           </div>
 
@@ -61,17 +72,13 @@ const PersonalHero = () => {
                       <div className="text-lg font-medium text-foreground group-hover:text-accent transition-smooth">
                         {link.name}
                       </div>
-                      <div className="text-base text-muted-foreground mt-1">
-                        {link.description}
-                      </div>
+                      <div className="text-base text-muted-foreground mt-1">{link.description}</div>
                     </div>
                   </a>
                 </Button>
               </Card>
             ))}
           </div>
-
-          
         </div>
       </div>
     </div>
