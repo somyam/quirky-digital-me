@@ -46,7 +46,7 @@ const PersonalHero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-semibold text-primary">{name}</h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               I am a backend engineer with 3 years of experience shipping resilient, scalable systems. I enjoy tinkering
-              with new AI tools, and am excited by startups that amplify collective healing. In my free time I read and
+              with new AI tools, and am excited by startups that amplify collective healing. In my free time, I read +
               write about healthcare equity, make art to explore personal transformation, and teach yoga.
             </p>
           </div>
