@@ -25,8 +25,6 @@ const PersonalHero = () => {
       url: "https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593",
       description: "nonprofit writing",
     },
-    { name: "Substack", url: "https://substack.com/@inthisskin?utm_source=user-menu", description: "personal essays" },
-    { name: "Instagram", url: "https://www.instagram.com/somyasart/", description: "creative practice" },
   ];
 
   return (
