@@ -54,7 +54,7 @@ const PersonalHero = () => {
           </div>
 
           {/* Social links */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 max-w-4xl mx-auto pt-8">
+          <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto pt-8">
             {socialLinks.map((link) => (
               <Card key={link.name} className="group hover:shadow-glow transition-all duration-300 border-border/50">
                 <Button
