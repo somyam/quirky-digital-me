@@ -56,7 +56,7 @@ const PersonalHero = () => {
           {/* Social links */}
           <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto pt-8">
             {socialLinks.map((link) => (
-              <Card key={link.name} className="group hover:shadow-glow transition-all duration-300 border-border/50">
+              <Card key={link.name} className="group hover:shadow-glow transition-all duration-300 border-border/50 w-40">
                 <Button
                   variant="ghost"
                   className="w-full h-full p-6 flex flex-col items-center gap-3 hover:bg-accent/10 transition-smooth"
