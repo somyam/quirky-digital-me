@@ -41,7 +41,6 @@ const PersonalHero = () => {
         <div className="space-y-8 relative z-10">
           {/* Name and tagline */}
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-semibold text-primary">{name}</h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               I'm a backend engineer with 3 years of experience shipping resilient, scalable systems. I enjoy experimenting with emerging AI tools and am interested in startups at the intersection of technology, healthcare, and community. Outside of work, I write, make art, and teach yoga.
             </p>
