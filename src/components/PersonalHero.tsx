@@ -42,10 +42,17 @@ const PersonalHero = () => {
           {/* Name and tagline */}
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight">
-              Somya Mohindra
+              {name}
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              I'm a backend engineer with 3 years of experience shipping resilient, scalable systems. I enjoy experimenting with emerging AI tools and am interested in technology, healthcare, and art.
+
+            {/* Prevent Google from using this as a search snippet */}
+            <p
+              data-nosnippet
+              className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
+            >
+              I'm a backend engineer with 3 years of experience shipping resilient, scalable systems.
+              I enjoy experimenting with emerging AI tools and am interested in technology, healthcare,
+              and art.
             </p>
           </div>
 
@@ -58,7 +65,10 @@ const PersonalHero = () => {
           {/* Social links */}
           <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto pt-8">
             {socialLinks.map((link) => (
-              <Card key={link.name} className="group hover:shadow-glow transition-all duration-300 border-border/50 w-40">
+              <Card
+                key={link.name}
+                className="group hover:shadow-glow transition-all duration-300 border-border/50 w-40"
+              >
                 <Button
                   variant="ghost"
                   className="w-full h-full p-6 flex flex-col items-center gap-3 hover:bg-accent/10 transition-smooth"
@@ -70,7 +80,9 @@ const PersonalHero = () => {
                       <div className="text-lg font-medium text-foreground group-hover:text-accent transition-smooth">
                         {link.name}
                       </div>
-                      <div className="text-base text-muted-foreground mt-1">{link.description}</div>
+                      <div className="text-base text-muted-foreground mt-1">
+                        {link.description}
+                      </div>
                     </div>
                   </a>
                 </Button>
