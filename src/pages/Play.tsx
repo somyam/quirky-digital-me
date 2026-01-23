@@ -256,35 +256,35 @@ const Play = () => {
             ) : openPopup === 5 ? (
               <>
                 <div className="flex justify-center mb-4">
-                  <img src="/medium.png" alt="Nonprofit Insights" className="w-48 h-48 object-contain" />
+                  <img src="/github.png" alt="GitHub" className="w-48 h-48 object-contain" />
                 </div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
-                  Nice work! You found my Nonprofit Insights
+                  Nice work! You found my GitHub
                 </h2>
                 <a
-                  href="https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593"
+                  href="https://github.com/somyam"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center mb-4"
                 >
-                  View Insights
+                  View GitHub
                 </a>
               </>
             ) : openPopup === 2 ? (
               <>
                 <div className="flex justify-center mb-4">
-                  <img src="/google_scholar.png" alt="Research" className="w-48 h-48 object-contain" />
+                  <img src="/FFCA.png" alt="FFCA" className="w-48 h-48 object-contain" />
                 </div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
-                  Nice work! You found my Research
+                  Nice work! You found my FFCA Policy Memo
                 </h2>
                 <a
-                  href="https://scholar.google.com/citations?user=Hx7nEfkAAAAJ&hl=en"
+                  href="https://docs.google.com/document/d/1C89XV4XzcNxcmakv8P9ARSaB9tfGEeXWOn58K-bf3zI/edit?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center mb-4"
                 >
-                  View Research
+                  View Document
                 </a>
               </>
             ) : openPopup === 3 ? (
@@ -324,35 +324,35 @@ const Play = () => {
             ) : openPopup === 6 ? (
               <>
                 <div className="flex justify-center mb-4">
-                  <img src="/github.png" alt="GitHub" className="w-48 h-48 object-contain" />
+                  <img src="/medium.png" alt="Nonprofit Insights" className="w-48 h-48 object-contain" />
                 </div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
-                  Nice work! You found my GitHub
+                  Nice work! You found my Nonprofit Insights
                 </h2>
                 <a
-                  href="https://github.com/somyam"
+                  href="https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center mb-4"
                 >
-                  View GitHub
+                  View Insights
                 </a>
               </>
             ) : openPopup === 7 ? (
               <>
                 <div className="flex justify-center mb-4">
-                  <img src="/FFCA.png" alt="FFCA" className="w-48 h-48 object-contain" />
+                  <img src="/google_scholar.png" alt="Research" className="w-48 h-48 object-contain" />
                 </div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
-                  Nice work! You found my FFCA Policy Memo
+                  Nice work! You found my Research
                 </h2>
                 <a
-                  href="https://docs.google.com/document/d/1C89XV4XzcNxcmakv8P9ARSaB9tfGEeXWOn58K-bf3zI/edit?usp=sharing"
+                  href="https://scholar.google.com/citations?user=Hx7nEfkAAAAJ&hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center mb-4"
                 >
-                  View Document
+                  View Research
                 </a>
               </>
             ) : openPopup === 9 ? (
