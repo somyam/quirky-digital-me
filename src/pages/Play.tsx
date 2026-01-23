@@ -241,12 +241,147 @@ const Play = () => {
       {openPopup !== null && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
           <div className="bg-white rounded-lg p-8 max-w-md w-full mx-4 shadow-2xl">
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">
-              Button {openPopup} Unlocked!
-            </h2>
-            <p className="text-gray-700 mb-6">
-              You clicked this rock 3 times and discovered something special!
-            </p>
+            {openPopup === 1 || openPopup === 5 || openPopup === 8 || openPopup === 11 ? (
+              <>
+                <div className="flex justify-center mb-4">
+                  <img src="/coal-lump.png" alt="Coal Lump" className="w-32 h-32 object-contain" />
+                </div>
+                <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
+                  You unlocked... COAL!
+                </h2>
+                <p className="text-gray-700 mb-6 text-center">
+                  Try another spot.
+                </p>
+              </>
+            ) : openPopup === 2 ? (
+              <>
+                <div className="flex justify-center mb-4">
+                  <img src="/UCSF.png" alt="UCSF Research" className="w-48 h-48 object-contain" />
+                </div>
+                <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
+                  UCSF Research
+                </h2>
+                <a
+                  href="https://scholar.google.com/citations?user=Hx7nEfkAAAAJ&hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center mb-4"
+                >
+                  View Research
+                </a>
+              </>
+            ) : openPopup === 3 ? (
+              <>
+                <div className="flex justify-center mb-4">
+                  <img src="/Goodreads.png" alt="Goodreads" className="w-48 h-48 object-contain" />
+                </div>
+                <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
+                  Goodreads
+                </h2>
+                <a
+                  href="https://www.goodreads.com/user/show/166562822-somya-mohindra"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center mb-4"
+                >
+                  View Profile
+                </a>
+              </>
+            ) : openPopup === 4 ? (
+              <>
+                <div className="flex justify-center mb-4">
+                  <img src="/substack.png" alt="Substack" className="w-48 h-48 object-contain" />
+                </div>
+                <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
+                  Substack
+                </h2>
+                <a
+                  href="https://substack.com/@inthisskin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center mb-4"
+                >
+                  View Substack
+                </a>
+              </>
+            ) : openPopup === 6 ? (
+              <>
+                <div className="flex justify-center mb-4">
+                  <img src="/github.png" alt="GitHub" className="w-48 h-48 object-contain" />
+                </div>
+                <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
+                  GitHub
+                </h2>
+                <a
+                  href="https://github.com/somyam"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center mb-4"
+                >
+                  View GitHub
+                </a>
+              </>
+            ) : openPopup === 7 ? (
+              <>
+                <div className="flex justify-center mb-4">
+                  <img src="/FFCA.png" alt="FFCA" className="w-48 h-48 object-contain" />
+                </div>
+                <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
+                  FFCA Policy Memo
+                </h2>
+                <a
+                  href="https://docs.google.com/document/d/1C89XV4XzcNxcmakv8P9ARSaB9tfGEeXWOn58K-bf3zI/edit?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center mb-4"
+                >
+                  View Document
+                </a>
+              </>
+            ) : openPopup === 9 ? (
+              <>
+                <div className="flex justify-center mb-4">
+                  <img src="/self.png" alt="Art Practice" className="w-48 h-48 object-contain" />
+                </div>
+                <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
+                  Art Practice
+                </h2>
+                <a
+                  href="https://drive.google.com/drive/u/0/folders/1uHuOOtQRYWn7SqQSOgzymbJekouQGP8W"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center mb-4"
+                >
+                  View Gallery
+                </a>
+              </>
+            ) : openPopup === 10 ? (
+              <>
+                <div className="flex justify-center mb-4">
+                  <img src="/Berkeley.png" alt="Academic Writing" className="w-48 h-48 object-contain" />
+                </div>
+                <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
+                  Academic Writing
+                </h2>
+                <a
+                  href="https://drive.google.com/drive/folders/1-XSUmUtoMFA2L4OuTJ_Prb0bpwj0dwl4?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center mb-4"
+                >
+                  View Documents
+                </a>
+              </>
+            ) : (
+              <>
+                <h2 className="text-2xl font-bold mb-4 text-gray-900">
+                  Button {openPopup} Unlocked!
+                </h2>
+                <p className="text-gray-700 mb-6">
+                  You clicked this rock 3 times and discovered something special!
+                </p>
+              </>
+            )}
             <button
               onClick={() => setOpenPopup(null)}
               className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded transition-colors"
