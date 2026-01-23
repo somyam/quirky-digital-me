@@ -247,7 +247,7 @@ const Play = () => {
                   <img src="/coal-lump.png" alt="Coal Lump" className="w-32 h-32 object-contain" />
                 </div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
-                  You unlocked... COAL!
+                  You Found... COAL!
                 </h2>
                 <p className="text-gray-700 mb-6 text-center">
                   Try another spot.
@@ -256,10 +256,10 @@ const Play = () => {
             ) : openPopup === 2 ? (
               <>
                 <div className="flex justify-center mb-4">
-                  <img src="/UCSF.png" alt="UCSF Research" className="w-48 h-48 object-contain" />
+                  <img src="/google_scholar.png" alt="Research" className="w-48 h-48 object-contain" />
                 </div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
-                  UCSF Research
+                  Nice work! You found my Research
                 </h2>
                 <a
                   href="https://scholar.google.com/citations?user=Hx7nEfkAAAAJ&hl=en"
@@ -276,7 +276,7 @@ const Play = () => {
                   <img src="/Goodreads.png" alt="Goodreads" className="w-48 h-48 object-contain" />
                 </div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
-                  Goodreads
+                  Nice work! You found my Goodreads
                 </h2>
                 <a
                   href="https://www.goodreads.com/user/show/166562822-somya-mohindra"
@@ -293,7 +293,7 @@ const Play = () => {
                   <img src="/substack.png" alt="Substack" className="w-48 h-48 object-contain" />
                 </div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
-                  Substack
+                  Nice work! You found my Substack
                 </h2>
                 <a
                   href="https://substack.com/@inthisskin"
@@ -310,7 +310,7 @@ const Play = () => {
                   <img src="/github.png" alt="GitHub" className="w-48 h-48 object-contain" />
                 </div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
-                  GitHub
+                  Nice work! You found my GitHub
                 </h2>
                 <a
                   href="https://github.com/somyam"
@@ -327,7 +327,7 @@ const Play = () => {
                   <img src="/FFCA.png" alt="FFCA" className="w-48 h-48 object-contain" />
                 </div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
-                  FFCA Policy Memo
+                  Nice work! You found my FFCA Policy Memo
                 </h2>
                 <a
                   href="https://docs.google.com/document/d/1C89XV4XzcNxcmakv8P9ARSaB9tfGEeXWOn58K-bf3zI/edit?usp=sharing"
@@ -344,7 +344,7 @@ const Play = () => {
                   <img src="/self.png" alt="Art Practice" className="w-48 h-48 object-contain" />
                 </div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
-                  Art Practice
+                  Nice work! You found my Art Practice
                 </h2>
                 <a
                   href="https://drive.google.com/drive/u/0/folders/1uHuOOtQRYWn7SqQSOgzymbJekouQGP8W"
@@ -361,7 +361,7 @@ const Play = () => {
                   <img src="/Berkeley.png" alt="Academic Writing" className="w-48 h-48 object-contain" />
                 </div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
-                  Academic Writing
+                  Nice work! You found my Academic Writing
                 </h2>
                 <a
                   href="https://drive.google.com/drive/folders/1-XSUmUtoMFA2L4OuTJ_Prb0bpwj0dwl4?usp=sharing"
