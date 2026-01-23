@@ -112,7 +112,7 @@ const Play = () => {
       {/* Navigation buttons */}
       <div className="absolute top-1/2 left-4 z-20 -translate-y-1/2 pointer-events-auto" style={{ cursor: 'pointer' }}>
         <Button
-          onClick={() => scroll("left")}
+          onClick={(e) => { e.stopPropagation(); scroll("left"); }}
           variant="outline"
           size="icon"
           className="h-12 w-12 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20"
@@ -122,7 +122,7 @@ const Play = () => {
       </div>
       <div className="absolute top-1/2 right-4 z-20 -translate-y-1/2 pointer-events-auto" style={{ cursor: 'pointer' }}>
         <Button
-          onClick={() => scroll("right")}
+          onClick={(e) => { e.stopPropagation(); scroll("right"); }}
           variant="outline"
           size="icon"
           className="h-12 w-12 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20"

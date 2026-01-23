@@ -37,7 +37,7 @@ const PersonalHero = () => {
           size="lg"
           className="font-bold text-lg hover:bg-accent/20 hover:scale-105 transition-all duration-300"
         >
-          PLAY
+          MINE MY DATA
         </Button>
       </Link>
 
