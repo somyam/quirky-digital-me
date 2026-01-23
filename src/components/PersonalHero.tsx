@@ -21,11 +21,6 @@ const PersonalHero = () => {
       url: "https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.16_suppl.1561",
       description: "published research",
     },
-    {
-      name: "Insights",
-      url: "https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593",
-      description: "nonprofit writing",
-    },
   ];
 
   return (

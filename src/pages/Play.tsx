@@ -241,7 +241,7 @@ const Play = () => {
       {openPopup !== null && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
           <div className="bg-white rounded-lg p-8 max-w-md w-full mx-4 shadow-2xl">
-            {openPopup === 1 || openPopup === 5 || openPopup === 8 || openPopup === 11 ? (
+            {openPopup === 1 || openPopup === 8 || openPopup === 11 ? (
               <>
                 <div className="flex justify-center mb-4">
                   <img src="/coal-lump.png" alt="Coal Lump" className="w-32 h-32 object-contain" />
@@ -252,6 +252,23 @@ const Play = () => {
                 <p className="text-gray-700 mb-6 text-center">
                   Try another spot.
                 </p>
+              </>
+            ) : openPopup === 5 ? (
+              <>
+                <div className="flex justify-center mb-4">
+                  <img src="/medium.png" alt="Nonprofit Insights" className="w-48 h-48 object-contain" />
+                </div>
+                <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
+                  Nice work! You found my Nonprofit Insights
+                </h2>
+                <a
+                  href="https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center mb-4"
+                >
+                  View Insights
+                </a>
               </>
             ) : openPopup === 2 ? (
               <>
