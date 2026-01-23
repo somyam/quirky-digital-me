@@ -62,7 +62,7 @@ const PersonalHero = () => {
               data-nosnippet
               className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
             >
-              I am currently pursuing a Master's in AI from UT Austin. I am a backend engineer with 3 years of experience shipping resilient, scalable systems. I am interested in all permutations of technology, health & wellness, and justice. In my free time, I make art and teach yoga.
+              I am currently pursuing a Master's in AI from UT Austin. I am a backend engineer with 3 years of experience shipping resilient, scalable systems. I am interested in all permutations of technology, health & wellness, and justice.
             </p>
           </div>
 
