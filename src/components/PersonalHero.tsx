@@ -1,6 +1,7 @@
 import { MapPin, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 interface SocialLink {
   name: string;
@@ -28,7 +29,18 @@ const PersonalHero = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-subtle flex items-center justify-center px-4 py-12">
+    <div className="min-h-screen bg-gradient-subtle flex items-center justify-center px-4 py-12 relative">
+      {/* PLAY button in upper right */}
+      <Link to="/play" className="absolute top-8 right-8">
+        <Button
+          variant="outline"
+          size="lg"
+          className="font-bold text-lg hover:bg-accent/20 hover:scale-105 transition-all duration-300"
+        >
+          PLAY
+        </Button>
+      </Link>
+
       <div className="max-w-4xl mx-auto text-center space-y-12">
         {/* Floating decoration */}
         <div className="absolute top-20 left-1/4 w-20 h-20 bg-accent/20 rounded-full animate-float"></div>
