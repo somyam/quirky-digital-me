@@ -52,7 +52,9 @@ const PersonalHero = () => {
               data-nosnippet
               className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
             >
-              I’m pursuing a Master’s in AI at UT Austin and have 3 years of experience as a backend engineer building resilient, scalable systems. I’m interested in technology, health & wellness, and policy. I advocate for Topical Steroid Withdrawal (TSW) awareness.          </div>
+              I'm pursuing a Master's in AI at UT Austin and have 3 years of experience as a backend engineer building resilient, scalable systems. I'm interested in technology, health & wellness, and policy. I advocate for Topical Steroid Withdrawal (TSW) awareness.
+            </p>
+          </div>
 
           {/* Location */}
           <div className="flex items-center justify-center gap-2 text-muted-foreground">
