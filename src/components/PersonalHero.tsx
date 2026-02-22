@@ -16,11 +16,6 @@ const PersonalHero = () => {
   const socialLinks: SocialLink[] = [
     { name: "LinkedIn", url: "https://www.linkedin.com/in/somya-mohindra/", description: "professional network" },
     { name: "GitHub", url: "https://github.com/somyam", description: "code & projects" },
-    {
-      name: "Research",
-      url: "https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.16_suppl.1561",
-      description: "published research",
-    },
   ];
 
   return (
@@ -57,9 +52,7 @@ const PersonalHero = () => {
               data-nosnippet
               className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
             >
-              I am currently pursuing a Master's in AI from UT Austin. I am a backend engineer with 3 years of experience shipping resilient, scalable systems. I am interested in all permutations of technology, health & wellness, and policy.
-            </p>
-          </div>
+              I’m pursuing a Master’s in AI at UT Austin and have 3 years of experience as a backend engineer building resilient, scalable systems. I’m interested in technology, health & wellness, and policy. I advocate for Topical Steroid Withdrawal (TSW) awareness.          </div>
 
           {/* Location */}
           <div className="flex items-center justify-center gap-2 text-muted-foreground">
