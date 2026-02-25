@@ -273,18 +273,18 @@ const Play = () => {
             ) : openPopup === 2 ? (
               <>
                 <div className="flex justify-center mb-4">
-                  <img src="/FFCA.png" alt="FFCA" className="w-48 h-48 object-contain" />
+                  <img src="/substack.png" alt="Substack" className="w-48 h-48 object-contain" />
                 </div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
-                  Nice work! You found my FFCA Policy Memo
+                  Nice work! You found my Substack
                 </h2>
                 <a
-                  href="https://docs.google.com/document/d/1C89XV4XzcNxcmakv8P9ARSaB9tfGEeXWOn58K-bf3zI/edit?usp=sharing"
+                  href="https://substack.com/@inthisskin"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center mb-4"
                 >
-                  View Document
+                  View Substack
                 </a>
               </>
             ) : openPopup === 3 ? (
@@ -307,18 +307,18 @@ const Play = () => {
             ) : openPopup === 4 ? (
               <>
                 <div className="flex justify-center mb-4">
-                  <img src="/substack.png" alt="Substack" className="w-48 h-48 object-contain" />
+                  <img src="/google_scholar.png" alt="Research" className="w-48 h-48 object-contain" />
                 </div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
-                  Nice work! You found my Substack
+                  Nice work! You found my Research
                 </h2>
                 <a
-                  href="https://substack.com/@inthisskin"
+                  href="https://scholar.google.com/citations?user=Hx7nEfkAAAAJ&hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center mb-4"
                 >
-                  View Substack
+                  View Research
                 </a>
               </>
             ) : openPopup === 6 ? (
@@ -341,18 +341,18 @@ const Play = () => {
             ) : openPopup === 7 ? (
               <>
                 <div className="flex justify-center mb-4">
-                  <img src="/google_scholar.png" alt="Research" className="w-48 h-48 object-contain" />
+                  <img src="/FFCA.png" alt="FFCA" className="w-48 h-48 object-contain" />
                 </div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
-                  Nice work! You found my Research
+                  Nice work! You found my FFCA Policy Memo
                 </h2>
                 <a
-                  href="https://scholar.google.com/citations?user=Hx7nEfkAAAAJ&hl=en"
+                  href="https://docs.google.com/document/d/1C89XV4XzcNxcmakv8P9ARSaB9tfGEeXWOn58K-bf3zI/edit?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center mb-4"
                 >
-                  View Research
+                  View Document
                 </a>
               </>
             ) : openPopup === 9 ? (
