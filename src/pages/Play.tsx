@@ -290,18 +290,18 @@ const Play = () => {
             ) : openPopup === 3 ? (
               <>
                 <div className="flex justify-center mb-4">
-                  <img src="/Goodreads.png" alt="Goodreads" className="w-48 h-48 object-contain" />
+                  <img src="/FFCA.png" alt="FFCA" className="w-48 h-48 object-contain" />
                 </div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
-                  Nice work! You found my Goodreads
+                  Nice work! You found my FFCA Policy Memo
                 </h2>
                 <a
-                  href="https://www.goodreads.com/user/show/166562822-somya-mohindra"
+                  href="https://docs.google.com/document/d/1C89XV4XzcNxcmakv8P9ARSaB9tfGEeXWOn58K-bf3zI/edit?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center mb-4"
                 >
-                  View Profile
+                  View Document
                 </a>
               </>
             ) : openPopup === 4 ? (
@@ -341,18 +341,18 @@ const Play = () => {
             ) : openPopup === 7 ? (
               <>
                 <div className="flex justify-center mb-4">
-                  <img src="/FFCA.png" alt="FFCA" className="w-48 h-48 object-contain" />
+                  <img src="/Goodreads.png" alt="Goodreads" className="w-48 h-48 object-contain" />
                 </div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
-                  Nice work! You found my FFCA Policy Memo
+                  Nice work! You found my Goodreads
                 </h2>
                 <a
-                  href="https://docs.google.com/document/d/1C89XV4XzcNxcmakv8P9ARSaB9tfGEeXWOn58K-bf3zI/edit?usp=sharing"
+                  href="https://www.goodreads.com/user/show/166562822-somya-mohindra"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center mb-4"
                 >
-                  View Document
+                  View Profile
                 </a>
               </>
             ) : openPopup === 9 ? (
