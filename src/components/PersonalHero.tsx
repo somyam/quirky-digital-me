@@ -63,7 +63,7 @@ const PersonalHero = () => {
               data-nosnippet
               className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
             >
-              I'm pursuing a Master's in AI at UT Austin and have 3 years of experience as a backend engineer building resilient, scalable systems. I'm interested in technology, health & wellness, and policy. I advocate for Topical Steroid Withdrawal (TSW) awareness.
+              I'm pursuing a Master's in AI at UT Austin and have 3 years of experience as a backend engineer building resilient, scalable systems. I'm interested in health & wellness and policy. I advocate for Topical Steroid Withdrawal (TSW) awareness.
             </p>
           </div>
 
