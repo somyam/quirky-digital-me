@@ -18,6 +18,16 @@ const PersonalHero = () => {
     { name: "GitHub", url: "https://github.com/somyam", description: "code & projects" },
   ];
 
+  const additionalLinks = [
+    { name: "Nonprofit Insights", url: "https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593" },
+    { name: "Goodreads", url: "https://www.goodreads.com/user/show/166562822-somya-mohindra" },
+    { name: "Research", url: "https://scholar.google.com/citations?user=Hx7nEfkAAAAJ&hl=en" },
+    { name: "Divestment Bill Policy Memo", url: "https://docs.google.com/document/d/1C89XV4XzcNxcmakv8P9ARSaB9tfGEeXWOn58K-bf3zI/edit?usp=sharing" },
+    { name: "Racial Gaps in Disability Identification", url: "https://drive.google.com/file/d/1YyodN3MGN-mq2MWmPXvTXM8jgF1BVCJP/view?usp=sharing" },
+    { name: "The Pitfalls of Housing First and the Pay-For-Success Model", url: "https://drive.google.com/file/d/1DDqhQKQzRKzfRuB0swJNclZLRqRStrXM/view?usp=sharing" },
+    { name: "Art Practice", url: "https://drive.google.com/drive/u/0/folders/1uHuOOtQRYWn7SqQSOgzymbJekouQGP8W" },
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-subtle flex items-center justify-center px-4 py-12 relative">
       {/* PLAY button in upper right */}
@@ -88,6 +98,24 @@ const PersonalHero = () => {
                 </Button>
               </Card>
             ))}
+          </div>
+
+          {/* Additional links as plain list */}
+          <div className="pt-8">
+            <ul className="text-left space-y-2 max-w-2xl mx-auto">
+              {additionalLinks.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-accent underline transition-colors text-lg"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
