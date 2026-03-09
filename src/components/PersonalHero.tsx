@@ -20,11 +20,12 @@ const PersonalHero = () => {
 
   const additionalLinks = [
     { name: "Nonprofit Insights", url: "https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593" },
-    { name: "Goodreads", url: "https://www.goodreads.com/user/show/166562822-somya-mohindra" },
     { name: "Research", url: "https://scholar.google.com/citations?user=Hx7nEfkAAAAJ&hl=en" },
+    { name: "Substack", url: "https://substack.com/@inthisskin" },
     { name: "Divestment Bill Policy Memo", url: "https://docs.google.com/document/d/1C89XV4XzcNxcmakv8P9ARSaB9tfGEeXWOn58K-bf3zI/edit?usp=sharing" },
     { name: "Racial Gaps in Disability Identification", url: "https://drive.google.com/file/d/1YyodN3MGN-mq2MWmPXvTXM8jgF1BVCJP/view?usp=sharing" },
     { name: "The Pitfalls of Housing First and the Pay-For-Success Model", url: "https://drive.google.com/file/d/1DDqhQKQzRKzfRuB0swJNclZLRqRStrXM/view?usp=sharing" },
+    { name: "Goodreads", url: "https://www.goodreads.com/user/show/166562822-somya-mohindra" },
     { name: "Art Practice", url: "https://drive.google.com/drive/u/0/folders/1uHuOOtQRYWn7SqQSOgzymbJekouQGP8W" },
   ];
 
