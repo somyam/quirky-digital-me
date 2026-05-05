@@ -22,7 +22,7 @@ const PersonalHero = () => {
     { name: "Nonprofit Insights: Successful Partnerships Between Human Service Nonprofits and Healthcare Organizations", url: "https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593" },
     { name: "Clinical Research", url: "https://scholar.google.com/citations?user=Hx7nEfkAAAAJ&hl=en" },
     { name: "Substack: inthisskin", url: "https://substack.com/@inthisskin" },
-    { name: "Divestment Bill Policy Memo", url: "https://docs.google.com/document/d/1C89XV4XzcNxcmakv8P9ARSaB9tfGEeXWOn58K-bf3zI/edit?usp=sharing" },
+    { name: "CalPERS & CalSTRS Fossil Fuel Divestment Bill Policy Memo", url: "https://docs.google.com/document/d/1C89XV4XzcNxcmakv8P9ARSaB9tfGEeXWOn58K-bf3zI/edit?usp=sharing" },
     { name: "Racial Gaps in Classroom Disability Identification", url: "https://drive.google.com/file/d/1YyodN3MGN-mq2MWmPXvTXM8jgF1BVCJP/view?usp=sharing" },
     { name: "The Pitfalls of Housing First and the Pay-For-Success Model", url: "https://drive.google.com/file/d/1DDqhQKQzRKzfRuB0swJNclZLRqRStrXM/view?usp=sharing" },
   ];
