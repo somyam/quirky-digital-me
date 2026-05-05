@@ -19,7 +19,7 @@ const PersonalHero = () => {
   ];
 
   const additionalLinks = [
-    { name: "Nonprofit Insights: Successful Partnerships Between Human Service Nonprofits and Healthcare Organizations", url: "https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593" },
+    { name: "Successful Partnerships Between Human Service Nonprofits and Healthcare Organizations", url: "https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593" },
     { name: "Clinical Research", url: "https://scholar.google.com/citations?user=Hx7nEfkAAAAJ&hl=en" },
     { name: "Substack: inthisskin", url: "https://substack.com/@inthisskin" },
     { name: "CalPERS & CalSTRS Fossil Fuel Divestment Bill Policy Memo", url: "https://docs.google.com/document/d/1C89XV4XzcNxcmakv8P9ARSaB9tfGEeXWOn58K-bf3zI/edit?usp=sharing" },
