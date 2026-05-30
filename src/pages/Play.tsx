@@ -1,8 +1,10 @@
 import { useRef, useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Play = () => {
+  const navigate = useNavigate();
   const containerRef = useRef<HTMLDivElement>(null);
   const pageRef = useRef<HTMLDivElement>(null);
   const [cursorPos, setCursorPos] = useState({ x: -100, y: -100 });
@@ -361,16 +363,14 @@ const Play = () => {
                   <img src="/self.png" alt="Art Practice" className="w-48 h-48 object-contain" />
                 </div>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 text-center">
-                  Nice work! You found my Art Practice
+                  Nice work! You found my Artwork
                 </h2>
-                <a
-                  href="https://drive.google.com/drive/u/0/folders/1uHuOOtQRYWn7SqQSOgzymbJekouQGP8W"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  onClick={() => navigate('/artwork')}
                   className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center mb-4"
                 >
-                  View Gallery
-                </a>
+                  View Artwork Gallery
+                </button>
               </>
             ) : openPopup === 10 ? (
               <>
