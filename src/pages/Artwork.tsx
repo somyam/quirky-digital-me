@@ -3,21 +3,19 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const Artwork = () => {
-  // Screenshots first, then IMG files in numerical order
+  // img1-img9 first, then remaining IMG files in numerical order
   const artworkImages = [
-    "Screenshot-2026-05-30-at-1.06.39-AM.png",
-    "Screenshot-2026-05-30-at-1.08.38-AM.png",
-    "Screenshot-2026-05-30-at-1.08.51-AM.png",
-    "Screenshot-2026-05-30-at-1.21.58-AM.png",
-    "Screenshot-2026-05-30-at-1.22.27-AM.png",
-    "Screenshot-2026-05-30-at-1.22.42-AM.png",
-    "Screenshot-2026-05-30-at-1.22.57-AM.png",
-    "IMG_3833.jpg",
+    "img1.png",
+    "img2.jpg",
+    "img3.png",
+    "img4.png",
+    "img5.jpg",
+    "img6.jpg",
+    "img7.jpg",
+    "img8.png",
+    "img9.png",
     "IMG_3834.jpg",
-    "IMG_3835.jpg",
     "IMG_3836.jpg",
-    "IMG_3837.jpg",
-    "IMG_3838.jpg",
     "IMG_3839.jpg",
     "IMG_3840.jpg",
     "IMG_3841.jpg",
