@@ -19,6 +19,7 @@ const PersonalHero = () => {
   ];
 
   const additionalLinks = [
+    { name: "Artwork", url: "/artwork", isInternal: true },
     { name: "Successful Partnerships Between Human Service Nonprofits and Healthcare Organizations", url: "https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593" },
     { name: "Clinical Research", url: "https://scholar.google.com/citations?user=Hx7nEfkAAAAJ&hl=en" },
     { name: "Substack: inthisskin", url: "https://substack.com/@inthisskin" },
@@ -104,14 +105,23 @@ const PersonalHero = () => {
             <ul className="text-left space-y-2 max-w-2xl mx-auto">
               {additionalLinks.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-accent underline transition-colors text-lg"
-                  >
-                    {link.name}
-                  </a>
+                  {link.isInternal ? (
+                    <Link
+                      to={link.url}
+                      className="text-muted-foreground hover:text-accent underline transition-colors text-lg"
+                    >
+                      {link.name}
+                    </Link>
+                  ) : (
+                    <a
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-accent underline transition-colors text-lg"
+                    >
+                      {link.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
