@@ -6,14 +6,14 @@ const Artwork = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-purple-950 to-slate-900">
       {/* Back button */}
-      <Link to="/play" className="absolute top-8 left-8 z-10">
+      <Link to="/" className="absolute top-8 left-8 z-10">
         <Button
           variant="outline"
           size="lg"
           className="font-bold text-lg hover:bg-accent/20 hover:scale-105 transition-all duration-300"
         >
           <ArrowLeft className="mr-2 h-5 w-5" />
-          Back to Mine My Data
+          Back
         </Button>
       </Link>
 
