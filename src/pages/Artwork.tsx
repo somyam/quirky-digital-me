@@ -3,15 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const Artwork = () => {
-  // Screenshots first, then IMG files in numerical order
+  // IMG files in numerical order first, then screenshots
   const artworkImages = [
-    "Screenshot-2026-05-30-at-1.06.39-AM.png",
-    "Screenshot-2026-05-30-at-1.08.38-AM.png",
-    "Screenshot-2026-05-30-at-1.08.51-AM.png",
-    "Screenshot-2026-05-30-at-1.21.58-AM.png",
-    "Screenshot-2026-05-30-at-1.22.27-AM.png",
-    "Screenshot-2026-05-30-at-1.22.42-AM.png",
-    "Screenshot-2026-05-30-at-1.22.57-AM.png",
     "IMG_3833.jpg",
     "IMG_3834.jpg",
     "IMG_3835.jpg",
@@ -30,6 +23,13 @@ const Artwork = () => {
     "IMG_3848.jpg",
     "IMG_3849.jpg",
     "IMG_3850.jpg",
+    "Screenshot-2026-05-30-at-1.06.39-AM.png",
+    "Screenshot-2026-05-30-at-1.08.38-AM.png",
+    "Screenshot-2026-05-30-at-1.08.51-AM.png",
+    "Screenshot-2026-05-30-at-1.21.58-AM.png",
+    "Screenshot-2026-05-30-at-1.22.27-AM.png",
+    "Screenshot-2026-05-30-at-1.22.42-AM.png",
+    "Screenshot-2026-05-30-at-1.22.57-AM.png",
   ];
 
   return (
