@@ -52,24 +52,12 @@ const Artwork = () => {
             <div key={index} className="group">
               <img
                 src={`/artwork/${image}`}
-                alt={`Artwork ${index + 1}`}
+                alt=""
                 className="w-full h-auto rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
                 loading="lazy"
               />
             </div>
           ))}
-        </div>
-
-        {/* Link to Google Drive */}
-        <div className="mt-12 text-center">
-          <a
-            href="https://drive.google.com/drive/u/0/folders/1uHuOOtQRYWn7SqQSOgzymbJekouQGP8W"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-white/10 hover:bg-white/20 text-white font-semibold py-3 px-8 rounded-lg transition-colors text-lg backdrop-blur-sm"
-          >
-            View Full Gallery on Google Drive
-          </a>
         </div>
       </div>
     </div>
