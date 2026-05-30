@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Artwork = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-purple-950 to-slate-900">
+    <div className="min-h-screen bg-black">
       {/* Back button */}
       <Link to="/" className="absolute top-8 left-8 z-10">
         <Button
