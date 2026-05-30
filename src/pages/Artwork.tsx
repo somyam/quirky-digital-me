@@ -1,8 +1,11 @@
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Artwork = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   // img1-img9 first, then remaining IMG files in numerical order
   const artworkImages = [
     "img1.png",
@@ -33,18 +36,20 @@ const Artwork = () => {
   return (
     <div className="min-h-screen bg-black">
       {/* Back button */}
-      <Link to="/" className="absolute top-8 left-8 z-10">
-        <Button
-          variant="outline"
-          size="lg"
-          className="font-bold text-lg hover:bg-accent/20 hover:scale-105 transition-all duration-300"
-        >
-          <ArrowLeft className="mr-2 h-5 w-5" />
-          Back
-        </Button>
-      </Link>
+      <div className="pt-8 pb-8">
+        <Link to="/" className="absolute top-8 left-8 z-10">
+          <Button
+            variant="outline"
+            size="lg"
+            className="font-bold text-lg hover:bg-accent/20 hover:scale-105 transition-all duration-300"
+          >
+            <ArrowLeft className="mr-2 h-5 w-5" />
+            Back
+          </Button>
+        </Link>
+      </div>
 
-      <div className="max-w-7xl mx-auto px-4 py-20">
+      <div className="max-w-7xl mx-auto px-4 pt-12 pb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {artworkImages.map((image, index) => (
             <div key={index} className="group">
@@ -53,11 +58,33 @@ const Artwork = () => {
                 alt=""
                 className="w-full h-auto rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
                 loading="lazy"
+                onClick={() => setSelectedImage(image)}
               />
             </div>
           ))}
         </div>
       </div>
+
+      {/* Image popup modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+          >
+            <X className="w-8 h-8" />
+          </button>
+          <img
+            src={`/artwork/${selectedImage}`}
+            alt=""
+            className="max-w-full max-h-full object-contain"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </div>
   );
 };
