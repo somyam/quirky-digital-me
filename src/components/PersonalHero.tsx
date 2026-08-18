@@ -1,4 +1,4 @@
-import { MapPin } from "lucide-react";
+import { MapPin, Linkedin, Github, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -6,23 +6,20 @@ const PersonalHero = () => {
   const name = "Somya Mohindra";
   const location = "San Francisco";
 
+  const iconLinks = [
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/somya-mohindra/", Icon: Linkedin },
+    { name: "GitHub", url: "https://github.com/somyam", Icon: Github },
+    { name: "Google Scholar", url: "https://scholar.google.com/citations?user=Hx7nEfkAAAAJ&hl=en", Icon: GraduationCap },
+  ];
+
   const linkGroups: { title: string; url?: string; isInternal?: boolean; links: { name: string; url: string; isInternal?: boolean }[] }[] = [
     {
-      title: "LinkedIn",
-      url: "https://www.linkedin.com/in/somya-mohindra/",
-      links: [],
-    },
-    {
-      title: "Clinical Research (Google Scholar)",
-      url: "https://scholar.google.com/citations?user=Hx7nEfkAAAAJ&hl=en",
-      links: [],
-    },
-    {
-      title: "Engineering (GitHub)",
+      title: "Engineering",
       url: "https://github.com/somyam",
       links: [
-        { name: "Prior Auth Agent", url: "https://github.com/somyam/prior-auth-agent" },
-        { name: "FDA Reporting Agent", url: "https://github.com/somyam/fda-reporting-agent" },
+        { name: "Policy-Grounded Prior Authorization Agent with Auditable Citations", url: "https://github.com/somyam/prior-auth-agent" },
+        { name: "Multi-Agent Adverse Event Detection & Autonomous FDA Reporting", url: "https://github.com/somyam/fda-reporting-agent" },
+        { name: "NLP Identification of Documented Mental Health Symptoms Associated with Risk of Mental Health Disorders in Patients with Cancer", url: "https://doi.org/10.1200/JCO.2023.41.16_suppl.1561" },
       ],
     },
     {
@@ -72,9 +69,9 @@ const PersonalHero = () => {
 
         {/* Main content */}
         <div className="space-y-8 relative z-10">
-          {/* Name and tagline */}
-          <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight">
+          {/* Name, tagline, location, and icon links */}
+          <div className="space-y-3">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground tracking-tight">
               {name}
             </h1>
 
@@ -84,12 +81,26 @@ const PersonalHero = () => {
               className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
             >
             </p>
-          </div>
 
-          {/* Location */}
-          <div className="flex items-center justify-center gap-2 text-muted-foreground">
-            <MapPin className="w-5 h-5" />
-            <span className="text-lg">{location}</span>
+            <div className="flex items-center justify-center gap-2 text-muted-foreground">
+              <MapPin className="w-7 h-7" />
+              <span className="text-2xl">{location}</span>
+            </div>
+
+            <div className="flex items-center justify-center gap-6">
+              {iconLinks.map(({ name, url, Icon }) => (
+                <a
+                  key={name}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={name}
+                  className="inline-flex items-center justify-center text-muted-foreground hover:text-accent transition-colors"
+              >
+                  <Icon className="w-7 h-7" />
+                </a>
+              ))}
+            </div>
           </div>
 
           {/* Additional links grouped by category */}
