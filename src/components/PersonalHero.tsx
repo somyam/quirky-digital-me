@@ -20,7 +20,10 @@ const PersonalHero = () => {
     {
       title: "Engineering (GitHub)",
       url: "https://github.com/somyam",
-      links: [],
+      links: [
+        { name: "Prior Auth Agent", url: "https://github.com/somyam/prior-auth-agent" },
+        { name: "FDA Reporting Agent", url: "https://github.com/somyam/fda-reporting-agent" },
+      ],
     },
     {
       title: "Writing",
