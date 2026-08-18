@@ -1,4 +1,4 @@
-import { MapPin, Linkedin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -7,6 +7,11 @@ const PersonalHero = () => {
   const location = "San Francisco";
 
   const linkGroups: { title: string; url?: string; isInternal?: boolean; links: { name: string; url: string; isInternal?: boolean }[] }[] = [
+    {
+      title: "LinkedIn",
+      url: "https://www.linkedin.com/in/somya-mohindra/",
+      links: [],
+    },
     {
       title: "Clinical Research (Google Scholar)",
       url: "https://scholar.google.com/citations?user=Hx7nEfkAAAAJ&hl=en",
@@ -66,20 +71,9 @@ const PersonalHero = () => {
         <div className="space-y-8 relative z-10">
           {/* Name and tagline */}
           <div className="space-y-6">
-            <div className="flex items-center justify-center gap-3">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight">
-                {name}
-              </h1>
-              <a
-                href="https://www.linkedin.com/in/somya-mohindra/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="inline-flex items-center justify-center text-muted-foreground hover:text-accent transition-colors"
-              >
-                <Linkedin className="w-7 h-7" />
-              </a>
-            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight">
+              {name}
+            </h1>
 
             {/* Prevent Google from using this as a search snippet */}
             <p
