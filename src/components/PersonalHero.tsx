@@ -1,32 +1,44 @@
-import { MapPin, ExternalLink } from "lucide-react";
+import { MapPin, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-
-interface SocialLink {
-  name: string;
-  url: string;
-  description: string;
-}
 
 const PersonalHero = () => {
   const name = "Somya Mohindra";
   const location = "San Francisco";
 
-  const socialLinks: SocialLink[] = [
-    { name: "LinkedIn", url: "https://www.linkedin.com/in/somya-mohindra/", description: "professional network" },
-    { name: "GitHub", url: "https://github.com/somyam", description: "code & projects" },
-  ];
-
-  const additionalLinks = [
-    { name: "Clinical Research", url: "https://scholar.google.com/citations?user=Hx7nEfkAAAAJ&hl=en" },
-    { name: "Successful Partnerships Between Human Service Nonprofits and Healthcare Organizations", url: "https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593" },
-    { name: "Substack", url: "https://substack.com/@inthisskin" },
-    { name: "CalPERS & CalSTRS Fossil Fuel Divestment Bill Policy Memo", url: "https://docs.google.com/document/d/1C89XV4XzcNxcmakv8P9ARSaB9tfGEeXWOn58K-bf3zI/edit?usp=sharing" },
-    { name: "Racial Gaps in Classroom Disability Identification", url: "https://drive.google.com/file/d/1YyodN3MGN-mq2MWmPXvTXM8jgF1BVCJP/view?usp=sharing" },
-    { name: "The Pitfalls of Housing First and the Pay-For-Success Model", url: "https://drive.google.com/file/d/1DDqhQKQzRKzfRuB0swJNclZLRqRStrXM/view?usp=sharing" },
-    { name: "Artwork", url: "/artwork", isInternal: true },
-
+  const linkGroups: { title: string; url?: string; isInternal?: boolean; links: { name: string; url: string; isInternal?: boolean }[] }[] = [
+    {
+      title: "Clinical Research (Google Scholar)",
+      url: "https://scholar.google.com/citations?user=Hx7nEfkAAAAJ&hl=en",
+      links: [],
+    },
+    {
+      title: "Engineering (GitHub)",
+      url: "https://github.com/somyam",
+      links: [],
+    },
+    {
+      title: "Writing",
+      url: "https://substack.com/@inthisskin",
+      links: [
+        { name: "Architecture of Invisibility: Topical Steroid Withdrawal in the FAERS Database", url: "https://substack.com/home/post/p-202689171" },
+        { name: "Medicaid Provider Spending Dataset and the Trump Administration", url: "https://substack.com/home/post/p-191308941" },
+        { name: "How GPT supported me through Topical Steroid Withdrawal", url: "https://substack.com/home/post/p-188758463" },
+        { name: "Topical Steroids in the 2020s", url: "https://substack.com/home/post/p-174214583" },
+        { name: "Post 2000s Topical Steroids", url: "https://substack.com/home/post/p-162510124" },
+        { name: "The Uneven Histories of Oral and Topical Steroids", url: "https://substack.com/home/post/p-162236531" },
+        { name: "CalPERS & CalSTRS Fossil Fuel Divestment Bill Policy Memo", url: "https://docs.google.com/document/d/1C89XV4XzcNxcmakv8P9ARSaB9tfGEeXWOn58K-bf3zI/edit?usp=sharing" },
+        { name: "Successful Partnerships Between Human Service Nonprofits and Healthcare Organizations", url: "https://insights.theberkeleygroup.org/successful-partnerships-between-human-service-nonprofits-and-healthcare-organizations-619490f90593" },
+        { name: "Racial Gaps in Classroom Disability Identification", url: "https://drive.google.com/file/d/1YyodN3MGN-mq2MWmPXvTXM8jgF1BVCJP/view?usp=sharing" },
+        { name: "The Pitfalls of Housing First and the Pay-For-Success Model", url: "https://drive.google.com/file/d/1DDqhQKQzRKzfRuB0swJNclZLRqRStrXM/view?usp=sharing" },
+      ],
+    },
+    {
+      title: "Art",
+      url: "/artwork",
+      isInternal: true,
+      links: [],
+    },
   ];
 
   return (
@@ -54,9 +66,20 @@ const PersonalHero = () => {
         <div className="space-y-8 relative z-10">
           {/* Name and tagline */}
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight">
-              {name}
-            </h1>
+            <div className="flex items-center justify-center gap-3">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight">
+                {name}
+              </h1>
+              <a
+                href="https://www.linkedin.com/in/somya-mohindra/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="inline-flex items-center justify-center text-muted-foreground hover:text-accent transition-colors"
+              >
+                <Linkedin className="w-7 h-7" />
+              </a>
+            </div>
 
             {/* Prevent Google from using this as a search snippet */}
             <p
@@ -72,59 +95,58 @@ const PersonalHero = () => {
             <span className="text-lg">{location}</span>
           </div>
 
-          {/* Social links */}
-          <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto pt-8">
-            {socialLinks.map((link) => (
-              <Card
-                key={link.name}
-                className="group hover:shadow-glow transition-all duration-300 border-border/50 w-40"
-              >
-                <Button
-                  variant="ghost"
-                  className="w-full h-full p-6 flex flex-col items-center gap-3 hover:bg-accent/10 transition-smooth"
-                  asChild
-                >
-                  <a href={link.url} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-6 h-6 text-accent group-hover:scale-110 transition-bounce" />
-                    <div className="text-center">
-                      <div className="text-lg font-medium text-foreground group-hover:text-accent transition-smooth">
-                        {link.name}
-                      </div>
-                      <div className="text-base text-muted-foreground mt-1">
-                        {link.description}
-                      </div>
-                    </div>
-                  </a>
-                </Button>
-              </Card>
-            ))}
-          </div>
-
-          {/* Additional links as plain list */}
-          <div className="pt-8">
-            <ul className="text-left space-y-2 max-w-2xl mx-auto">
-              {additionalLinks.map((link) => (
-                <li key={link.name}>
-                  {link.isInternal ? (
+          {/* Additional links grouped by category */}
+          <div className="pt-8 space-y-6 max-w-2xl mx-auto text-left">
+            {linkGroups.map((group) => (
+              <div key={group.title}>
+                {group.url ? (
+                  group.isInternal ? (
                     <Link
-                      to={link.url}
-                      className="text-muted-foreground hover:text-accent underline transition-colors text-lg"
+                      to={group.url}
+                      className="block text-sm font-semibold uppercase tracking-wide text-muted-foreground/70 underline hover:text-accent mb-2 transition-colors"
                     >
-                      {link.name}
+                      {group.title}
                     </Link>
                   ) : (
                     <a
-                      href={link.url}
+                      href={group.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-accent underline transition-colors text-lg"
+                      className="block text-sm font-semibold uppercase tracking-wide text-muted-foreground/70 underline hover:text-accent mb-2 transition-colors"
                     >
-                      {link.name}
+                      {group.title}
                     </a>
-                  )}
-                </li>
-              ))}
-            </ul>
+                  )
+                ) : (
+                  <h2 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground/70 mb-2">
+                    {group.title}
+                  </h2>
+                )}
+                <ul className="space-y-2 pl-6">
+                  {group.links.map((link) => (
+                    <li key={link.name}>
+                      {link.isInternal ? (
+                        <Link
+                          to={link.url}
+                          className="text-muted-foreground hover:text-accent transition-colors text-lg"
+                        >
+                          {link.name}
+                        </Link>
+                      ) : (
+                        <a
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-muted-foreground hover:text-accent transition-colors text-lg"
+                        >
+                          {link.name}
+                        </a>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </div>
