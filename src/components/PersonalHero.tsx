@@ -17,7 +17,7 @@ const PersonalHero = () => {
       title: "Engineering",
       url: "https://github.com/somyam",
       links: [
-        { name: "Prior Authorization Agent with Auditable Citations", url: "https://github.com/somyam/prior-auth-agent" },
+        { name: "Prior Authorization Agent with Linked Evidence", url: "https://github.com/somyam/prior-auth-agent" },
         { name: "Multi-Agent Adverse Event Detection & Autonomous FDA Reporting", url: "https://github.com/somyam/fda-reporting-agent" },
         { name: "NLP Identification of Documented Mental Health Symptoms Associated with Risk of Mental Health Disorders in Patients with Cancer", url: "https://doi.org/10.1200/JCO.2023.41.16_suppl.1561" },
       ],
@@ -96,7 +96,7 @@ const PersonalHero = () => {
                   rel="noopener noreferrer"
                   aria-label={name}
                   className="inline-flex items-center justify-center text-muted-foreground hover:text-accent transition-colors"
-              >
+                >
                   <Icon className="w-7 h-7" />
                 </a>
               ))}
