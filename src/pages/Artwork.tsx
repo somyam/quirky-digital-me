@@ -22,7 +22,6 @@ const Artwork = () => {
     "img5.jpg",
     "img6.jpg",
     "img7.jpg",
-    "img8.png",
     "img9.png",
     "IMG_3836.jpg",
     "IMG_3839.jpg",
