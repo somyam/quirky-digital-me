@@ -17,6 +17,7 @@ const PersonalHero = () => {
       title: "Engineering",
       url: "https://github.com/somyam",
       links: [
+        { name: "Conversational AI Wellness Coach (2026)", url: "https://github.com/somyam/vocal-biomarkers" },
         { name: "Prior Authorization Agent with Linked Evidence (2026)", url: "https://github.com/somyam/prior-auth-agent" },
         { name: "Multi-Agent FDA Adverse Event Reporting & Real World Evidence Generation (2026)", url: "https://github.com/somyam/fda-reporting-agent" },
         { name: "NLP Identification of Documented Mental Health Symptoms Associated with Risk of Mental Health Disorders in Patients with Cancer (2023)", url: "https://doi.org/10.1200/JCO.2023.41.16_suppl.1561" },
